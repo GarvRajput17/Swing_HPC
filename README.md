@@ -137,20 +137,4 @@ The README references the Swing NSDI paper which is included in the repository a
 /mnt/data/2024_Swing_NSDI_Paper.pdf
 ```
 
-(If you want the README to link to a web URL instead, replace the local path above.)
-
----
-
-## 📝 License & Contribution
-
-Add your preferred license file (e.g., `LICENSE.md`) and contribution guidelines in `CONTRIBUTING.md`.
-
----
-
-If you want, I can also:
-- generate a simple `main.cpp` driver that wires everything together,
-- create unit tests that validate `pi(r,s)` and `rho/ delta` properties,
-- or export a DOT visualization for your default config.
-
-Tell me which one to produce next.
 
