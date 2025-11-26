@@ -1,0 +1,3 @@
+Next steps:
+- Replace placeholder worker with real allreduce component later.
+- For Swing communication pattern implementation, request C++ SST element.
