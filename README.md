@@ -28,6 +28,10 @@ This work is based on the Swing paper (included in the repository): `/mnt/data/2
 
 ---
 
+## Swing Demo- first 3 steps
+![Demo](animations/swing.gif)
+
+---
 ## 📁 Project Structure
 
 ```
