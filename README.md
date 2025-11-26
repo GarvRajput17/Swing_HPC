@@ -21,6 +21,9 @@ To enable a complete performance comparison, this project extends significantly 
 - Per-step communication tracing
 - Bandwidth, latency & congestion estimation
 
+- Simulating the performance comparison of the algorithms using SST-SIMULATOR on multiple nodes as given in the paper for mesh and torus topologies. The simulation found negligble changes on limited number of nodes due to hardware limitations and thus the inference has been taken from the SST_Simulator outputs as cited in the papers.
+
+
 This work is based on the Swing paper (included in the repository): `/mnt/data/2024_Swing_NSDI_Paper.pdf`.
 
 ---
