@@ -153,10 +153,7 @@ stats.print();
 ## 📚 Paper & References
 
 The README references the Swing NSDI paper which is included in the repository at:
-
-```
-/mnt/data/2024_Swing_NSDI_Paper.pdf
-```
+[https://github.com/GarvRajput17/Swing_HPC/blob/main/2024_Swing_NSDI_Paper.pdf](https://github.com/GarvRajput17/Swing_HPC/blob/main/2024_Swing_NSDI_Paper.pdf)
 
 ## Presentation and Video
 [https://drive.google.com/drive/folders/1W-9V5beAHGmvxyCAdN54r-taSv_BGOxg](https://drive.google.com/drive/folders/1W-9V5beAHGmvxyCAdN54r-taSv_BGOxg)
