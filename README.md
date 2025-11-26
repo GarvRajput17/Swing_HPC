@@ -81,6 +81,18 @@ This work is based on the Swing paper (included in the repository): `/mnt/data/2
 - Latency-optimal: full-vector exchanges per step.
 - Produces `Statistics` for analysis and simulator input.
 
+### `BucketAlgorithm.h`
+- Defines a dimension-ordered collective strategy that splits the input vector into chunks proportional to the dimension sizes.
+- Performs a Reduce-Scatter phase by iterating forward through dimensions `0 to D`, sending data to positive neighbors along the current axis.
+- Executes an AllGather phase by iterating backward through dimensions `D to 0`, expanding the data chunks at each step.
+- Estimates simulation timestamps and goodput by modeling strictly local (1-hop) communication costs for every step.
+
+### `RingAlgorithm.h`
+- Maps the collective operation onto a single logical ring spanning all `P` nodes, splitting the data vector into `P` equal segments.
+- Executes a standard two-phase protocol with `P-1` Reduce-Scatter steps followed immediately by `P-1` AllGather steps.
+- Calculates the physical Manhattan distance (including torus wrap-around) between logical ring neighbors to determine specific link latencies.
+- Derives final performance metrics by tracking the maximum path latency per step and the total volume of bytes transmitted across the network.
+
 ---
 
 ## ⚙️ How it all connects (execution flow)
