@@ -16,6 +16,8 @@ It includes:
 - Implementations of:
   - Swing (Bandwidth-Optimal + Latency-Optimal)
   - Recursive Doubling variants
+  - ✨ Beyond the Paper: Baseline Implementation
+To enable a complete performance comparison, this project extends significantly beyond the original paper's pseudo-code. While the paper explicitly defines the **Swing** algorithm, we independently derived and implemented the **Bucket**, **Hamiltonian Ring**, and **Recursive Doubling** algorithms purely from the theoretical descriptions in Section 2 of the paper. This allows the simulator to faithfully reproduce the comparative evaluation landscape and validates the Swing algorithm against the true state-of-the-art.
 - Per-step communication tracing
 - Bandwidth, latency & congestion estimation
 
@@ -136,5 +138,8 @@ The README references the Swing NSDI paper which is included in the repository a
 ```
 /mnt/data/2024_Swing_NSDI_Paper.pdf
 ```
+
+## Presentation and Video
+[https://drive.google.com/drive/folders/1W-9V5beAHGmvxyCAdN54r-taSv_BGOxg](https://drive.google.com/drive/folders/1W-9V5beAHGmvxyCAdN54r-taSv_BGOxg)
 
 
